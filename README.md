@@ -53,6 +53,7 @@ $$F_1 = \frac{2 \times \text{Precision} \times \text{Recall}}{\text{Precision} +
 
 
 <img width="1492" height="757" alt="image" src="https://github.com/user-attachments/assets/0ad7fa8c-ff7b-49ba-9953-02bb32199cd9" />
+
 ### 4.2 Objective Critique
 1. **SegFormer Dominance:** SegFormer achieved the highest Recall (0.7355), making it the most operational model for early warning systems where missing a severe fire (False Negative) is unacceptable. 
 2. **DeepLabV3+ Precision:** DeepLabV3+ generated the tightest spatial boundaries (Precision: 0.6950), minimizing false alarms, directly attributable to the ASPP module.
