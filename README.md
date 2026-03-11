@@ -11,6 +11,9 @@ We start with the wildfire dataset, which contains satellite images of areas wit
   Data Augmentation: To increase effective data size and improve generalization, we apply random transformations. Common augmentations include horizontal/vertical flips, rotations, and random crops. For satellite imagery, we may also adjust brightness or contrast slightly. These augmentations simulate different viewing conditions and make the model more robust.
 <img width="1024" height="411" alt="image" src="https://github.com/user-attachments/assets/33e57527-6db0-443a-9765-2f23eda08166" />
 
+<img width="1478" height="825" alt="image" src="https://github.com/user-attachments/assets/8036599c-dc0d-4e82-a46e-5220ccf51c4d" />
+
+
 # U-Net Model Architecture
 
 Our core model is a U-Net implemented in PyTorch. The U-Net consists of an encoder (downsampling path) and a decoder (upsampling path) with skip connections between matching levels. Each encoder stage has convolutional blocks that capture what is in the image, and each decoder stage uses transposed convolutions (or upsampling) to localize where the feature should be marked​. The skip connections concatenate encoder feature maps to the decoder, providing fine-grained spatial details that were lost during downsampling. 
